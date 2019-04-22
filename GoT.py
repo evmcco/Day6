@@ -86,8 +86,8 @@ def allegiances():
                 house_name = houses[a]
                 if house_name not in house_dict.keys():
                     house_dict[house_name] = 1
-                if house_name in house_dict.keys():
+                elif house_name in house_dict.keys():
                     house_dict[house_name] += 1
     for h in house_dict.keys():
         pprint(str(h) + ": " + str(house_dict[h]))
-# allegiances()
+allegiances()
